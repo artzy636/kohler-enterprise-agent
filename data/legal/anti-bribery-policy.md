@@ -1,0 +1,3 @@
+# Anti-Bribery and Anti-Corruption Policy
+
+Kohler prohibits offering, giving, or accepting bribes, kickbacks, or improper payments to influence business decisions, in compliance with applicable international anti-corruption laws. Gifts and hospitality from vendors or partners exceeding $100 in value must be disclosed to Legal/Compliance and may need to be declined or donated. Facilitation payments to expedite routine government processes are prohibited even in jurisdictions where they are locally common practice. All employees in vendor-facing or government-facing roles complete additional anti-bribery training annually.

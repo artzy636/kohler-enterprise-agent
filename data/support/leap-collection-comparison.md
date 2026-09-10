@@ -1,0 +1,3 @@
+# Leap Smart Toilet Collection — Model Comparison
+
+The Leap collection offers multiple smart toilet models at different price points, all sharing a consistent tankless silhouette. Entry-level Leap models include basic personal cleansing (bidet) functionality with a single wand and adjustable water pressure. Mid-tier models add a heated seat and warm-air drying, still with a single wand. The top-tier Leap models, including the newest expansion, add dual front-and-rear cleansing wands and additional personalization presets. All Leap models are available in multiple finish colors, including the Dune finish introduced in the most recent collection expansion.

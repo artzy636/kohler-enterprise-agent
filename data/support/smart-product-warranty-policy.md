@@ -1,0 +1,3 @@
+# Smart Product Warranty Policy
+
+Kohler smart products, including Anthem smart showering, Numi and Leap smart toilets, and Verdera Voice mirrors, carry a standard 1-year limited warranty covering electronic and mechanical defects, separate from the standard plumbing fixture warranty which may extend longer on non-electronic components. Warranty claims require proof of purchase and are processed through the Konnect app's support section or by contacting customer care. Water damage caused by improper installation is not covered under the standard warranty; installation by a licensed plumber is recommended to maintain full warranty coverage. Extended warranty plans are available for purchase within 90 days of the original purchase date.

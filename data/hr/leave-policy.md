@@ -1,0 +1,3 @@
+# Annual Leave Policy
+
+Full-time employees accrue 1.5 days of paid annual leave per month of service, totaling 18 days per year. Leave requests must be submitted through the HR portal at least 5 business days in advance for planned leave. Unused leave up to 10 days may be carried over to the next calendar year; anything beyond that is forfeited unless covered under a regional exception. Leave during the December blackout period (Dec 15 - Jan 2) requires manager approval at least 3 weeks in advance due to year-end closing activities. New hires become eligible to take accrued leave after completing their first 90 days of employment.

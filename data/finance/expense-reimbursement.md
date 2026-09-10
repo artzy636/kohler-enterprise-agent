@@ -1,0 +1,3 @@
+# Expense Reimbursement Policy
+
+Employees may submit business expenses (travel, meals, client entertainment, remote work equipment) for reimbursement through the expense portal within 60 days of the expense date. Receipts are required for any expense over $25. Reimbursements are processed within 10 business days of approval and paid out in the next payroll or direct deposit cycle. Personal expenses, alcohol beyond a $50 per-person meal cap, and first-class travel upgrades are not reimbursable without prior VP approval. Expenses submitted after the 60-day window require Finance director sign-off to be considered.

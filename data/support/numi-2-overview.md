@@ -1,0 +1,3 @@
+# Numi 2.0 Smart Toilet — Product Overview
+
+The Numi 2.0 is Kohler's flagship smart toilet, featuring a rectangular silhouette, integrated Alexa-enabled speakers, wireless music streaming, ambient mood lighting, and a motion-activated lid and seat. It includes a personal cleansing (bidet) function with adjustable water temperature and pressure, a heated seat, and warm-air drying. The toilet connects to the Konnect app for personalized user presets, allowing multiple household members to save individual comfort settings. Numi 2.0 requires a nearby GFCI-protected electrical outlet for installation, in addition to standard water supply and drain connections.

@@ -1,0 +1,3 @@
+# Promotion and Appraisal Criteria
+
+Promotion eligibility requires a performance rating of 4 (Exceeds Expectations) or higher in the two most recent review cycles, along with a minimum of 12 months in the current role. Promotion cases are submitted by the manager to a calibration committee, which reviews scope of impact, readiness for the next level, and team feedback. Lateral moves between departments do not require the same rating threshold but do require director-level sign-off. Promotion decisions are communicated within 4 weeks of committee review, aligned with the June and December review cycles.

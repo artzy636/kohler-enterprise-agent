@@ -1,0 +1,3 @@
+# Anti-Harassment and Anti-Discrimination Policy
+
+Kohler maintains a zero-tolerance policy toward harassment or discrimination based on race, gender, age, religion, disability, sexual orientation, or any other protected status. Reports can be made to HR, a manager, or the anonymous ethics hotline, and are investigated within 48 hours of receipt regardless of the reporter's seniority. Interim measures (such as schedule or reporting-line adjustments) may be put in place during an investigation to protect the complainant. Confirmed violations result in disciplinary action up to and including immediate termination, independent of the violator's role or tenure.

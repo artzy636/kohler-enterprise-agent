@@ -1,0 +1,3 @@
+# Employee Benefits Overview
+
+Full-time employees are eligible for health, dental, and vision insurance starting on their first day of employment, with premiums partially subsidized by Kohler. The 401(k)/retirement plan includes a 4% company match, vesting fully after 3 years of service. Additional benefits include an annual wellness stipend of $500, tuition reimbursement up to $5,000 per year for approved courses, and an employee assistance program (EAP) offering free confidential counseling sessions. Part-time employees working 20+ hours per week are eligible for a prorated subset of benefits.

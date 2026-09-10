@@ -1,0 +1,3 @@
+# Training and Development Program
+
+All employees complete mandatory annual compliance training covering the Code of Conduct, data privacy, and anti-harassment policies, typically assigned in Q1. Beyond compliance training, employees have access to a learning stipend of $1,000 per year for external courses, certifications, or conferences relevant to their role, subject to manager approval. Internal mentorship programs pair employees with senior leaders for 6-month cycles. Technical and leadership development tracks are available through the internal learning platform, with completion tracked as part of the annual performance review.

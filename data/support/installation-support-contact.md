@@ -1,0 +1,3 @@
+# Installation Support and Contact Information
+
+Customers needing installation guidance for smart products can access step-by-step video guides within the Konnect app under each device's support tab. For issues not resolved by self-service guides, customer care can be reached through the Konnect app's chat support or the standard customer service line for hardware and connectivity troubleshooting. Kohler does not directly perform installations but maintains a directory of certified professional installers within the app. Complex installations involving electrical work for products like the Numi 2.0 should always be performed by a licensed electrician alongside a licensed plumber.

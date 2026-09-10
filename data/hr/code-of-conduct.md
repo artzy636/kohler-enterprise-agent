@@ -1,0 +1,3 @@
+# Code of Conduct
+
+All employees are expected to act with integrity, honesty, and respect in all business dealings. This includes avoiding conflicts of interest, maintaining confidentiality of proprietary information, and treating colleagues, customers, and partners fairly regardless of background. Violations should be reported through the anonymous ethics hotline or directly to HR. Retaliation against employees who report concerns in good faith is strictly prohibited and will result in disciplinary action, up to and including termination. All employees complete annual Code of Conduct training as part of the training and development curriculum.

@@ -1,0 +1,3 @@
+# Annual Budget Approval Workflow
+
+Department budgets are proposed each September for the following fiscal year, reviewed by Finance in October, and finalized by the executive team in November. Mid-year budget adjustments require a written justification and are reviewed quarterly. Departments exceeding their quarterly budget by more than 10% must submit a variance explanation to Finance within 5 business days of the quarter close. Unused budget does not automatically roll over to the next fiscal year; rollover requests require director approval and are capped at 15% of the original allocation.

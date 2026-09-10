@@ -1,0 +1,3 @@
+# Understanding Cycle Mode Water Savings
+
+Cycle Mode on Anthem EvoCycle is designed to reduce water waste during the warm-up phase of a shower. Instead of running water continuously while it heats, Cycle Mode pulses the water flow in short intervals and alerts the user via the Konnect app or an in-shower indicator once the water has reached the target temperature, so they can start the shower without standing under cold water. Kohler's testing indicates Cycle Mode can reduce water used during warm-up by up to 80% compared to a standard continuous-flow shower start. Actual savings vary based on plumbing distance from the water heater and household water pressure. Water usage per session is tracked and viewable in the Konnect app's history tab.

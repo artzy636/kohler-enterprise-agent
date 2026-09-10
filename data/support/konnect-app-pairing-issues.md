@@ -1,0 +1,3 @@
+# Troubleshooting KOHLER Konnect App Pairing Issues
+
+If a smart device fails to pair with the Konnect app, first confirm the device's firmware is up to date via the app's device settings screen. Ensure the mobile phone's Bluetooth is enabled and location services are on, as both are required for the initial pairing handshake on most Android devices. If pairing still fails, restart both the device (power cycle) and the Konnect app, then retry pairing within 2 minutes of the device restart, as the pairing window times out. Persistent pairing failures after these steps typically indicate a Wi-Fi network compatibility issue (5GHz-only networks are not supported by most Konnect-enabled devices, which require 2.4GHz).

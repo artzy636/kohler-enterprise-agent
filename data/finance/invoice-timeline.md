@@ -1,0 +1,3 @@
+# Vendor Invoice Processing Timeline
+
+Vendor invoices are processed on a net-30 payment cycle from the date of receipt, provided the invoice matches an approved purchase order. Invoices without a matching PO are routed to the requesting department for validation, which can add 5-10 business days. Finance runs payment batches weekly, every Wednesday. Disputed invoices are held pending resolution and do not accrue late fees provided the dispute is raised within 10 business days of receipt. Rush payments outside the standard cycle require director approval and a documented business justification.

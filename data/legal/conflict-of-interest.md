@@ -1,0 +1,3 @@
+# Conflict of Interest Policy
+
+Employees must disclose any personal, financial, or familial relationship that could reasonably influence their business decisions — including relationships with vendors, competitors, or direct reports. Disclosures are made through the annual Conflict of Interest questionnaire or immediately upon a new conflict arising. Employees may not participate in hiring, procurement, or approval decisions involving a party they have an undisclosed conflict with. Failure to disclose a known conflict of interest is treated as a Code of Conduct violation and may result in disciplinary action.

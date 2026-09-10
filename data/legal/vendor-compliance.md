@@ -1,0 +1,3 @@
+# Vendor Compliance Requirements
+
+All vendors handling Kohler data or operating on Kohler premises must sign a vendor compliance agreement covering data protection, anti-bribery, and labor standards before onboarding. Vendors processing personal data on Kohler's behalf must also sign a Data Processing Agreement. Compliance is reviewed annually for vendors in high-risk categories (data processing, manufacturing, international logistics); lower-risk vendors are reviewed every 2 years. Vendors found in violation of compliance terms are given a 30-day remediation period before contract termination is considered.

@@ -1,0 +1,3 @@
+# Grievance and Dispute Resolution Process
+
+Employees with workplace concerns are encouraged to first raise the issue informally with their manager. If unresolved, a formal grievance can be filed with HR, which triggers an investigation within 10 business days. Employees may request a different HR representative if there's a conflict of interest. Grievances related to harassment or discrimination follow the accelerated process outlined in the anti-harassment policy, with investigations beginning within 48 hours. All grievance outcomes are documented and employees are notified of the resolution in writing.

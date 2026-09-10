@@ -1,0 +1,3 @@
+# Anthem EvoCycle Smart Showering — Setup Guide
+
+The Anthem EvoCycle smart shower system connects to the KOHLER Konnect app via Bluetooth during initial setup, then transitions to home Wi-Fi for ongoing app control. To begin setup, power on the digital valve, open the Konnect app, and follow the in-app pairing steps. The system offers precise digital temperature control and a Cycle Mode designed to reduce water use during warm-up. Once connected, customers can save personalized shower presets (temperature, flow, duration) accessible via the in-shower display or voice control if integrated with a compatible smart home system.

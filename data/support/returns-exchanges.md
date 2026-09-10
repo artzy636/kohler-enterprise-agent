@@ -1,0 +1,3 @@
+# Returns and Exchanges Policy
+
+Unopened, uninstalled products may be returned within 90 days of purchase for a full refund when purchased directly through Kohler's website or authorized retailers, subject to each retailer's specific return policy. Installed products are not eligible for return but may qualify for warranty service if defective. Custom or special-order items, including certain Artist Editions pieces, are final sale and not eligible for return or exchange. Return shipping costs for non-defective returns are the customer's responsibility unless the return is due to a Kohler shipping error.

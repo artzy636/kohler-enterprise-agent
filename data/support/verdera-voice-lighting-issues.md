@@ -1,0 +1,3 @@
+# Verdera Voice — Lighting Response Troubleshooting
+
+If the Verdera Voice mirror is not responding to voice commands for lighting adjustment, first confirm the mirror shows as "Online" in the Konnect app's device list — an offline status usually means a lost Wi-Fi connection, which can be resolved by power-cycling the mirror. If the mirror is online but lighting commands are inconsistent, check for interference from other smart devices on the same voice assistant account with similar naming, which can cause the assistant to route commands incorrectly. A firmware update, available through the Konnect app, resolves most known responsiveness issues from earlier production batches.

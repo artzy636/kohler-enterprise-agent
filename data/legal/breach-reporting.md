@@ -1,0 +1,3 @@
+# Data Breach and Incident Reporting Policy
+
+Any suspected data breach, unauthorized data access, or security incident must be reported to the Legal/Compliance and IT Security teams within 24 hours of discovery, regardless of the reporter's role or the incident's apparent severity. Confirmed breaches involving personal data trigger regulatory notification obligations, which vary by jurisdiction but generally require notification within 72 hours of confirmation. Employees should never attempt to independently investigate or remediate a suspected breach — all incidents route through the formal incident response process.

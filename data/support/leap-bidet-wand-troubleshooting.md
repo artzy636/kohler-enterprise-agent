@@ -1,0 +1,3 @@
+# Leap Collection — Bidet Wand Troubleshooting
+
+If the personal cleansing (bidet) wand on a Leap toilet is not extending or retracting properly, first check that the water supply valve is fully open, as low water pressure can prevent the wand mechanism from cycling correctly. For dual-wand top-tier models, front and rear wand functions are controlled by separate buttons on the remote or side panel — confirm the correct button is being used for the desired function; entry and mid-tier single-wand models have only one cleansing button. If the wand extends but no water flows, this typically indicates a supply line issue rather than a wand mechanism fault, and a plumber should inspect the connection.

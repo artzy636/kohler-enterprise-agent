@@ -1,0 +1,3 @@
+# Employee Data Handling Guidelines
+
+HR and payroll data (compensation, performance reviews, medical/benefits information) is classified as highly confidential and accessible only to HR, the employee's direct manager (limited fields), and Finance/payroll as needed. Sharing employee data outside these approved channels, including informally with colleagues, is a policy violation. Employees have the right to request a copy of their own HR file at any time. Background check data is retained separately from the general personnel file and deleted 3 years after employment ends, per the data retention policy.

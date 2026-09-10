@@ -1,0 +1,3 @@
+# Numi 2.0 — Alexa and Voice Feature Troubleshooting
+
+If Alexa-enabled features on the Numi 2.0 are unresponsive, first confirm the toilet is connected to home Wi-Fi via the Konnect app's device status screen — voice features require an active internet connection and do not work over Bluetooth-only pairing. Next, check that the Numi 2.0 skill is enabled in the Alexa app and linked to the same Konnect account used for the toilet. If voice commands are recognized but audio playback fails, check the toilet's speaker volume setting in the Konnect app, as it defaults to a low level after a factory reset or firmware update.

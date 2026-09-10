@@ -1,0 +1,3 @@
+# Business Travel and Per Diem Policy
+
+Domestic business travel per diem is $75/day for meals and incidentals; international travel per diem varies by destination and is published quarterly by Finance. Airfare should be booked at least 14 days in advance through the corporate travel portal to qualify for standard reimbursement rates; late bookings require manager justification. Hotel accommodations are capped at $200/night domestically unless the conference venue requires otherwise. Ground transportation (taxi, rideshare) is reimbursable with receipts; personal vehicle mileage is reimbursed at the current IRS standard mileage rate.
