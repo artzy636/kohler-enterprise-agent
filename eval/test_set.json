@@ -1,0 +1,25 @@
+[
+  {"query": "How many days of annual leave do full-time employees accrue per year?", "expected_action": "answer", "domain": "hr"},
+  {"query": "What is the standard payment term for new vendors?", "expected_action": "answer", "domain": "finance"},
+  {"query": "How long is the warranty on the Numi 2.0 smart toilet?", "expected_action": "answer", "domain": "support"},
+  {"query": "Within how many hours must a suspected data breach be reported?", "expected_action": "answer", "domain": "legal"},
+  {"query": "How much can I be reimbursed for a domestic company-initiated relocation?", "expected_action": "answer", "domain": "finance"},
+  {"query": "Why won't my smart device pair with the Konnect app?", "expected_action": "answer", "domain": "support"},
+  {"query": "How many weeks of paid parental leave does the primary caregiver get?", "expected_action": "answer", "domain": "hr"},
+  {"query": "How long do I have to return an unopened product for a full refund?", "expected_action": "answer", "domain": "support"},
+
+  {"query": "What performance ratings do I need across my last two review cycles to be promotion-eligible, and what's the top of that rating scale?", "expected_action": "answer", "domain": "hr", "note": "multi-hop: promotion-appraisal-criteria + performance-review-cycle"},
+  {"query": "I'm a manager and want to buy a $12,000 piece of equipment. What approval process applies?", "expected_action": "answer", "domain": "finance", "note": "multi-hop: procurement-approval-by-role + asset-purchase-approval"},
+  {"query": "How long is my background check data kept after I leave the company?", "expected_action": "answer", "domain": "legal", "note": "multi-hop: employee-data-handling + data-retention"},
+  {"query": "Does the entry-level Leap toilet have both a front and rear cleansing wand I'd need to troubleshoot separately?", "expected_action": "answer", "domain": "support", "note": "multi-hop: leap-collection-comparison + leap-bidet-wand-troubleshooting"},
+
+  {"query": "How much can I approve for a purchase without needing additional sign-off?", "expected_action": "clarify", "domain": "finance", "note": "ambiguous: depends on requester's role"},
+  {"query": "What's my per diem for this trip?", "expected_action": "clarify", "domain": "finance", "note": "ambiguous: domestic vs international"},
+  {"query": "Is my product still under warranty?", "expected_action": "clarify", "domain": "support", "note": "ambiguous: which product, purchase date, install method"},
+  {"query": "How long will Legal take to review my contract?", "expected_action": "clarify", "domain": "legal", "note": "ambiguous: standard-template vs non-standard terms"},
+
+  {"query": "Does Kohler offer an employee referral bonus, and how much is it?", "expected_action": "escalate", "domain": null, "note": "not covered anywhere in KB"},
+  {"query": "What is the company's dress code policy for office employees?", "expected_action": "escalate", "domain": null, "note": "not covered anywhere in KB"},
+  {"query": "Is there a safety recall on the Leap toilet collection?", "expected_action": "escalate", "domain": null, "note": "not covered anywhere in KB"},
+  {"query": "What's the vesting schedule for employee stock options?", "expected_action": "escalate", "domain": null, "note": "not covered anywhere in KB"}
+]
