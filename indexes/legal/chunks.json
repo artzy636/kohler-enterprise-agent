@@ -1,0 +1,50 @@
+[
+  {
+    "text": "# Anti-Bribery and Anti-Corruption Policy Kohler prohibits offering, giving, or accepting bribes, kickbacks, or improper payments to influence business decisions, in compliance with applicable international anti-corruption laws. Gifts and hospitality from vendors or partners exceeding $100 in value must be disclosed to Legal/Compliance and may need to be declined or donated. Facilitation payments to expedite routine government processes are prohibited even in jurisdictions where they are locally common practice. All employees in vendor-facing or government-facing roles complete additional anti-bribery training annually.",
+    "source": "anti-bribery-policy.md"
+  },
+  {
+    "text": "# Data Breach and Incident Reporting Policy Any suspected data breach, unauthorized data access, or security incident must be reported to the Legal/Compliance and IT Security teams within 24 hours of discovery, regardless of the reporter's role or the incident's apparent severity. Confirmed breaches involving personal data trigger regulatory notification obligations, which vary by jurisdiction but generally require notification within 72 hours of confirmation. Employees should never attempt to independently investigate or remediate a suspected breach — all incidents route through the formal incident response process.",
+    "source": "breach-reporting.md"
+  },
+  {
+    "text": "# Conflict of Interest Policy Employees must disclose any personal, financial, or familial relationship that could reasonably influence their business decisions — including relationships with vendors, competitors, or direct reports. Disclosures are made through the annual Conflict of Interest questionnaire or immediately upon a new conflict arising. Employees may not participate in hiring, procurement, or approval decisions involving a party they have an undisclosed conflict with. Failure to disclose a known conflict of interest is treated as a Code of Conduct violation and may result in disciplinary action.",
+    "source": "conflict-of-interest.md"
+  },
+  {
+    "text": "# Contract Review and Approval Workflow All external contracts must be reviewed by Legal before signature, regardless of value. Standard-template contracts with no modifications can be approved by Legal within 5 business days. Contracts with non-standard terms, liability caps above $1M, or exclusivity clauses require additional Legal director review and can take 2-3 weeks. No employee other than designated signing authorities (VP level and above, or delegated by Legal) may sign a binding contract on behalf of Kohler.",
+    "source": "contract-approval-workflow.md"
+  },
+  {
+    "text": "# Data Privacy Policy Kohler collects and processes personal data (employee, customer, and partner data) only for legitimate business purposes and in compliance with applicable regional privacy regulations. Personal data must be stored only in approved, encrypted systems; storing customer or employee data on personal devices or unapproved cloud services is prohibited. Data subject access requests must be routed to the Legal/Compliance team and fulfilled within 30 days. Any suspected data privacy violation should be reported immediately per the breach reporting policy.",
+    "source": "data-privacy-policy.md"
+  },
+  {
+    "text": "# Data Retention Policy Customer transaction and support data is retained for 7 years to meet regulatory and warranty obligations, after which it is securely deleted. Employee records, including background check data, are retained for the duration of employment plus 3 years for legal purposes. Marketing and non-essential customer engagement data is retained for 2 years unless the customer has an active account. Data subject to a legal hold is retained indefinitely until Legal releases the hold, overriding standard retention schedules.",
+    "source": "data-retention.md"
+  },
+  {
+    "text": "# Employee Data Handling Guidelines HR and payroll data (compensation, performance reviews, medical/benefits information) is classified as highly confidential and accessible only to HR, the employee's direct manager (limited fields), and Finance/payroll as needed. Sharing employee data outside these approved channels, including informally with colleagues, is a policy violation. Employees have the right to request a copy of their own HR file at any time. Background check data is retained separately from the general personnel file and deleted 3 years after employment ends, per the data retention policy.",
+    "source": "employee-data-handling.md"
+  },
+  {
+    "text": "# Intellectual Property Policy All work product, inventions, designs, and code created by employees within the scope of their employment are the property of Kohler, per the IP assignment agreement signed at hiring. Employees must disclose any pre-existing IP or side projects that may overlap with their role before starting. Use of open-source software in Kohler products must be reviewed and approved by Legal to ensure license compatibility. Employees are prohibited from using Kohler confidential designs or code in any external or personal project, including after employment ends.",
+    "source": "ip-policy.md"
+  },
+  {
+    "text": "# Regulatory Compliance Overview Kohler's products and operations are subject to regulatory frameworks including consumer product safety standards, environmental regulations (water efficiency certifications for plumbing products), and data privacy law across the regions where it operates. The Compliance team maintains a regulatory tracking calendar and coordinates cross-functional response to new or changing regulations. Product teams must complete a compliance review checklist before launching any new connected or water-using product, coordinated with both Legal and Engineering.",
+    "source": "regulatory-compliance-overview.md"
+  },
+  {
+    "text": "# Customer Terms of Service Summary Kohler's consumer-facing products and connected app services (including KOHLER Konnect) are governed by Terms of Service that customers accept upon account creation. Key terms include: data collected via connected devices is used to provide the service and improve product performance; customers may opt out of non-essential data sharing at any time in app settings; warranty terms are separate from the digital Terms of Service. Disputes are subject to arbitration per the terms, except where prohibited by local consumer protection law.",
+    "source": "terms-of-service-summary.md"
+  },
+  {
+    "text": "# Third-Party Compliance Audit Process High-risk vendors and manufacturing partners are subject to an annual third-party compliance audit covering labor standards, environmental practices, and data security controls, conducted by an independent auditing firm. Audit findings are shared with the vendor with a required corrective action plan for any major findings, due within 60 days. Repeated failure to remediate major findings across two consecutive audit cycles results in vendor relationship review by the executive compliance committee, which may lead to contract termination.",
+    "source": "third-party-audit.md"
+  },
+  {
+    "text": "# Vendor Compliance Requirements All vendors handling Kohler data or operating on Kohler premises must sign a vendor compliance agreement covering data protection, anti-bribery, and labor standards before onboarding. Vendors processing personal data on Kohler's behalf must also sign a Data Processing Agreement. Compliance is reviewed annually for vendors in high-risk categories (data processing, manufacturing, international logistics); lower-risk vendors are reviewed every 2 years. Vendors found in violation of compliance terms are given a 30-day remediation period before contract termination is considered.",
+    "source": "vendor-compliance.md"
+  }
+]

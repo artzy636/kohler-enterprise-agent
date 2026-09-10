@@ -1,0 +1,50 @@
+[
+  {
+    "text": "# Capital Asset Purchase Approval Purchases of capital equipment or assets valued over $10,000 with a useful life beyond one year require a capital expenditure (CapEx) request, reviewed by Finance and approved by the relevant VP. CapEx requests must include a business case, expected ROI or operational justification, and depreciation schedule. Asset purchases between $10,000 and $50,000 require VP approval; purchases above $50,000 require executive committee approval. All capital assets are tagged and tracked in the fixed asset register upon receipt.",
+    "source": "asset-purchase-approval.md"
+  },
+  {
+    "text": "# Annual Budget Approval Workflow Department budgets are proposed each September for the following fiscal year, reviewed by Finance in October, and finalized by the executive team in November. Mid-year budget adjustments require a written justification and are reviewed quarterly. Departments exceeding their quarterly budget by more than 10% must submit a variance explanation to Finance within 5 business days of the quarter close. Unused budget does not automatically roll over to the next fiscal year; rollover requests require director approval and are capped at 15% of the original allocation.",
+    "source": "budget-approval-workflow.md"
+  },
+  {
+    "text": "# Corporate Card Policy Corporate cards are issued to employees who travel frequently or manage recurring vendor relationships, subject to manager and Finance approval. Cardholders must submit itemized receipts and expense categorization within 15 days of each statement close. Personal use of the corporate card is prohibited and may result in card revocation. Cards have a default monthly limit of $5,000, adjustable by Finance based on role and travel frequency. Lost or stolen cards must be reported to the card issuer and Finance immediately to avoid liability for unauthorized charges.",
+    "source": "corporate-card-policy.md"
+  },
+  {
+    "text": "# Expense Reimbursement Policy Employees may submit business expenses (travel, meals, client entertainment, remote work equipment) for reimbursement through the expense portal within 60 days of the expense date. Receipts are required for any expense over $25. Reimbursements are processed within 10 business days of approval and paid out in the next payroll or direct deposit cycle. Personal expenses, alcohol beyond a $50 per-person meal cap, and first-class travel upgrades are not reimbursable without prior VP approval. Expenses submitted after the 60-day window require Finance director sign-off to be considered.",
+    "source": "expense-reimbursement.md"
+  },
+  {
+    "text": "# Vendor Invoice Processing Timeline Vendor invoices are processed on a net-30 payment cycle from the date of receipt, provided the invoice matches an approved purchase order. Invoices without a matching PO are routed to the requesting department for validation, which can add 5-10 business days. Finance runs payment batches weekly, every Wednesday. Disputed invoices are held pending resolution and do not accrue late fees provided the dispute is raised within 10 business days of receipt. Rush payments outside the standard cycle require director approval and a documented business justification.",
+    "source": "invoice-timeline.md"
+  },
+  {
+    "text": "# Petty Cash Policy Each office location maintains a petty cash fund of up to $500 for small, immediate business expenses under $50 (office supplies, small client hospitality items). Petty cash disbursements require a receipt and a completed petty cash voucher signed by the office manager. The fund is reconciled monthly by Finance, and any discrepancies over $10 must be investigated and documented. Petty cash cannot be used for travel expenses, employee reimbursements exceeding $50, or recurring vendor payments — those follow the standard expense or invoice process.",
+    "source": "petty-cash.md"
+  },
+  {
+    "text": "# Procurement and Purchase Approval Thresholds Purchase approval authority is tiered by role: Individual contributors can approve purchases up to $500 without additional sign-off. Team leads can approve up to $2,000. Managers can approve up to $10,000. Directors and above can approve unlimited purchases within their department's approved annual budget. Any purchase exceeding $10,000, regardless of role, requires a second signature from Finance and a competitive quote comparison. Purchases must reference an active budget line; unbudgeted purchases require a budget exception request.",
+    "source": "procurement-approval-by-role.md"
+  },
+  {
+    "text": "# Employee Relocation Reimbursement Employees relocating for a company-initiated transfer are eligible for reimbursement of reasonable moving expenses, including packing/shipping of household goods, temporary housing for up to 30 days, and one house-hunting trip for the employee and spouse/partner. Relocation reimbursement is capped at $15,000 domestically and $25,000 internationally, subject to VP approval. Employees who voluntarily leave the company within 12 months of a company-funded relocation are required to repay a prorated portion of the relocation benefit.",
+    "source": "relocation-reimbursement.md"
+  },
+  {
+    "text": "# Employee Tax Documentation Requirements Employees must submit updated tax withholding forms within 30 days of any change in filing status or dependents. Annual tax documents are issued by January 31 each year through the payroll portal. Employees working across state or country lines for more than 30 days in a calendar year should notify Finance to ensure correct tax jurisdiction withholding. Independent contractors and vendors must submit a completed tax form before their first invoice payment is processed.",
+    "source": "tax-documentation.md"
+  },
+  {
+    "text": "# Business Travel and Per Diem Policy Domestic business travel per diem is $75/day for meals and incidentals; international travel per diem varies by destination and is published quarterly by Finance. Airfare should be booked at least 14 days in advance through the corporate travel portal to qualify for standard reimbursement rates; late bookings require manager justification. Hotel accommodations are capped at $200/night domestically unless the conference venue requires otherwise. Ground transportation (taxi, rideshare) is reimbursable with receipts; personal vehicle mileage is reimbursed at the current IRS standard mileage rate.",
+    "source": "travel-per-diem.md"
+  },
+  {
+    "text": "# Standard Vendor Payment Terms Standard payment terms for new vendors are net-30 from invoice receipt, contingent on a signed master service agreement and completed vendor onboarding in the procurement system. Preferred vendors with a 2+ year relationship and consistent on-time delivery may be extended net-45 terms upon Finance director approval. Early payment discounts offered by vendors should be evaluated by the requesting department and Finance before acceptance. International vendor payments are processed via wire transfer and may take an additional 3-5 business days to clear.",
+    "source": "vendor-payment-terms.md"
+  },
+  {
+    "text": "# Year-End Financial Closing Process Finance closes the fiscal year on December 31, with a blackout period from December 15 to January 2 during which non-critical purchase orders and expense reimbursements are paused. All outstanding expense reports for the current fiscal year must be submitted by December 10 to be included in that year's closing. Departments should finalize any budget rollover requests by December 5. Final year-end financial statements are published internally by January 20 following audit review.",
+    "source": "year-end-closing.md"
+  }
+]

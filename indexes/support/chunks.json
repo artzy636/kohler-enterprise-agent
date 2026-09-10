@@ -1,0 +1,50 @@
+[
+  {
+    "text": "# Understanding Cycle Mode Water Savings Cycle Mode on Anthem EvoCycle is designed to reduce water waste during the warm-up phase of a shower. Instead of running water continuously while it heats, Cycle Mode pulses the water flow in short intervals and alerts the user via the Konnect app or an in-shower indicator once the water has reached the target temperature, so they can start the shower without standing under cold water. Kohler's testing indicates Cycle Mode can reduce water used during warm-up by up to 80% compared to a standard continuous-flow shower start. Actual savings vary based on plumbing distance from the water heater and household water pressure. Water usage per session is tracked and viewable in the Konnect app's history tab.",
+    "source": "anthem-cycle-mode-water-savings.md"
+  },
+  {
+    "text": "# Anthem EvoCycle Smart Showering — Setup Guide The Anthem EvoCycle smart shower system connects to the KOHLER Konnect app via Bluetooth during initial setup, then transitions to home Wi-Fi for ongoing app control. To begin setup, power on the digital valve, open the Konnect app, and follow the in-app pairing steps. The system offers precise digital temperature control and a Cycle Mode designed to reduce water use during warm-up. Once connected, customers can save personalized shower presets (temperature, flow, duration) accessible via the in-shower display or voice control if integrated with a compatible smart home system.",
+    "source": "anthem-evocycle-setup.md"
+  },
+  {
+    "text": "# Installation Support and Contact Information Customers needing installation guidance for smart products can access step-by-step video guides within the Konnect app under each device's support tab. For issues not resolved by self-service guides, customer care can be reached through the Konnect app's chat support or the standard customer service line for hardware and connectivity troubleshooting. Kohler does not directly perform installations but maintains a directory of certified professional installers within the app. Complex installations involving electrical work for products like the Numi 2.0 should always be performed by a licensed electrician alongside a licensed plumber.",
+    "source": "installation-support-contact.md"
+  },
+  {
+    "text": "# Troubleshooting KOHLER Konnect App Pairing Issues If a smart device fails to pair with the Konnect app, first confirm the device's firmware is up to date via the app's device settings screen. Ensure the mobile phone's Bluetooth is enabled and location services are on, as both are required for the initial pairing handshake on most Android devices. If pairing still fails, restart both the device (power cycle) and the Konnect app, then retry pairing within 2 minutes of the device restart, as the pairing window times out. Persistent pairing failures after these steps typically indicate a Wi-Fi network compatibility issue (5GHz-only networks are not supported by most Konnect-enabled devices, which require 2.4GHz).",
+    "source": "konnect-app-pairing-issues.md"
+  },
+  {
+    "text": "# Leap Collection — Bidet Wand Troubleshooting If the personal cleansing (bidet) wand on a Leap toilet is not extending or retracting properly, first check that the water supply valve is fully open, as low water pressure can prevent the wand mechanism from cycling correctly. For dual-wand top-tier models, front and rear wand functions are controlled by separate buttons on the remote or side panel — confirm the correct button is being used for the desired function; entry and mid-tier single-wand models have only one cleansing button. If the wand extends but no water flows, this typically indicates a supply line issue rather than a wand mechanism fault, and a plumber should inspect the connection.",
+    "source": "leap-bidet-wand-troubleshooting.md"
+  },
+  {
+    "text": "# Leap Smart Toilet Collection — Model Comparison The Leap collection offers multiple smart toilet models at different price points, all sharing a consistent tankless silhouette. Entry-level Leap models include basic personal cleansing (bidet) functionality with a single wand and adjustable water pressure. Mid-tier models add a heated seat and warm-air drying, still with a single wand. The top-tier Leap models, including the newest expansion, add dual front-and-rear cleansing wands and additional personalization presets. All Leap models are available in multiple finish colors, including the Dune finish introduced in the most recent collection expansion.",
+    "source": "leap-collection-comparison.md"
+  },
+  {
+    "text": "# Numi 2.0 — Alexa and Voice Feature Troubleshooting If Alexa-enabled features on the Numi 2.0 are unresponsive, first confirm the toilet is connected to home Wi-Fi via the Konnect app's device status screen — voice features require an active internet connection and do not work over Bluetooth-only pairing. Next, check that the Numi 2.0 skill is enabled in the Alexa app and linked to the same Konnect account used for the toilet. If voice commands are recognized but audio playback fails, check the toilet's speaker volume setting in the Konnect app, as it defaults to a low level after a factory reset or firmware update.",
+    "source": "numi-2-alexa-troubleshooting.md"
+  },
+  {
+    "text": "# Numi 2.0 Smart Toilet — Product Overview The Numi 2.0 is Kohler's flagship smart toilet, featuring a rectangular silhouette, integrated Alexa-enabled speakers, wireless music streaming, ambient mood lighting, and a motion-activated lid and seat. It includes a personal cleansing (bidet) function with adjustable water temperature and pressure, a heated seat, and warm-air drying. The toilet connects to the Konnect app for personalized user presets, allowing multiple household members to save individual comfort settings. Numi 2.0 requires a nearby GFCI-protected electrical outlet for installation, in addition to standard water supply and drain connections.",
+    "source": "numi-2-overview.md"
+  },
+  {
+    "text": "# Returns and Exchanges Policy Unopened, uninstalled products may be returned within 90 days of purchase for a full refund when purchased directly through Kohler's website or authorized retailers, subject to each retailer's specific return policy. Installed products are not eligible for return but may qualify for warranty service if defective. Custom or special-order items, including certain Artist Editions pieces, are final sale and not eligible for return or exchange. Return shipping costs for non-defective returns are the customer's responsibility unless the return is due to a Kohler shipping error.",
+    "source": "returns-exchanges.md"
+  },
+  {
+    "text": "# Smart Product Warranty Policy Kohler smart products, including Anthem smart showering, Numi and Leap smart toilets, and Verdera Voice mirrors, carry a standard 1-year limited warranty covering electronic and mechanical defects, separate from the standard plumbing fixture warranty which may extend longer on non-electronic components. Warranty claims require proof of purchase and are processed through the Konnect app's support section or by contacting customer care. Water damage caused by improper installation is not covered under the standard warranty; installation by a licensed plumber is recommended to maintain full warranty coverage. Extended warranty plans are available for purchase within 90 days of the original purchase date.",
+    "source": "smart-product-warranty-policy.md"
+  },
+  {
+    "text": "# Verdera Voice — Lighting Response Troubleshooting If the Verdera Voice mirror is not responding to voice commands for lighting adjustment, first confirm the mirror shows as \"Online\" in the Konnect app's device list — an offline status usually means a lost Wi-Fi connection, which can be resolved by power-cycling the mirror. If the mirror is online but lighting commands are inconsistent, check for interference from other smart devices on the same voice assistant account with similar naming, which can cause the assistant to route commands incorrectly. A firmware update, available through the Konnect app, resolves most known responsiveness issues from earlier production batches.",
+    "source": "verdera-voice-lighting-issues.md"
+  },
+  {
+    "text": "# Verdera Voice Mirror — Setup Guide The Verdera Voice mirror connects to home Wi-Fi through the Konnect app for voice-activated lighting control. During setup, mount the mirror per the included instructions, power it on, and add it as a new device in the Konnect app. Voice activation requires linking to a compatible smart home voice assistant through the app's integration settings. Once connected, users can adjust lighting brightness and color temperature hands-free, useful for tasks like shaving or applying makeup where reaching for a switch is inconvenient.",
+    "source": "verdera-voice-setup.md"
+  }
+]
