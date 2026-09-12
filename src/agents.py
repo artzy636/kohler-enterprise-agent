@@ -49,13 +49,21 @@ You will be given a draft answer and the source context chunks it was supposed t
 Evaluate whether the draft is fully grounded in the source chunks (no unsupported claims, no facts absent \
 from the context) and decide how confident and actionable the draft is.
 
+Important rule: if the draft itself states that it doesn't have enough information, cannot answer \
+confidently, or otherwise contains no substantive answer to the question, then action MUST be "escalate" - \
+regardless of how well-reasoned or appropriate that refusal is. The "answer" action is only for drafts that \
+provide an actual grounded answer to the question, never for drafts that correctly decline to answer. A \
+well-written refusal is still not a confident answer.
+
 Respond with ONLY a single valid JSON object (no markdown formatting, no surrounding text) with exactly \
 these fields:
 {
   "grounded": <true or false - whether every claim in the draft is supported by the source chunks>,
   "confidence": <"high", "medium", or "low">,
-  "action": <"answer" if the draft is ready to send as-is, "clarify" if the user's question needs \
-clarification before a confident answer is possible, or "escalate" if this should go to a human>,
+  "action": <"answer" if the draft provides an actual grounded answer and is ready to send as-is, "clarify" \
+if the user's question needs clarification before a confident answer is possible, or "escalate" if this \
+should go to a human - including whenever the draft itself declines to answer or says it lacks enough \
+information>,
   "reasoning": <a brief string explaining the evaluation>
 }"""
 
