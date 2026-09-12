@@ -13,8 +13,8 @@ load_dotenv()
 
 client = genai.Client()
 
-FLASH_LITE_MODEL = "gemini-2.5-flash-lite"
-FLASH_MODEL = "gemini-2.5-flash"
+FLASH_LITE_MODEL = "gemini-3.5-flash-lite"
+FLASH_MODEL = "gemini-3.6-flash"
 
 DOMAINS = ["HR", "FINANCE", "SUPPORT", "LEGAL", "OTHER"]
 
@@ -40,7 +40,8 @@ If the context does not contain enough information to answer confidently, respon
 "I don't have enough information to answer confidently"
 followed by a brief note on what information is missing, rather than guessing or inferring beyond the context.
 
-When you do answer, be concise and cite which part of the context supports your answer where useful."""
+When you do answer, be concise. Write in clean prose without bracketed citations, chunk numbers, \
+or other inline reference markers - do not mention "Chunk" or similar labels in your answer."""
 
 VERIFY_ANSWER_SYSTEM_PROMPT = """You are a quality-control reviewer for an enterprise knowledge assistant. \
 You will be given a draft answer and the source context chunks it was supposed to be based on.
