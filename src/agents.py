@@ -55,10 +55,16 @@ regardless of how well-reasoned or appropriate that refusal is. The "answer" act
 provide an actual grounded answer to the question, never for drafts that correctly decline to answer. A \
 well-written refusal is still not a confident answer.
 
+"grounded" must be true only when action is "answer" and the draft provides a real, evidence-backed \
+response supported by the source chunks. In every other case - "escalate" (whether because the draft \
+refused to answer or because it contained ungrounded content) or "clarify" - "grounded" must be false, \
+since there is no substantive answer being made that could be evaluated as grounded.
+
 Respond with ONLY a single valid JSON object (no markdown formatting, no surrounding text) with exactly \
 these fields:
 {
-  "grounded": <true or false - whether every claim in the draft is supported by the source chunks>,
+  "grounded": <true only if action is "answer" and the draft is a real answer fully supported by the \
+source chunks; false in every other case, including "escalate" and "clarify">,
   "confidence": <"high", "medium", or "low">,
   "action": <"answer" if the draft provides an actual grounded answer and is ready to send as-is, "clarify" \
 if the user's question needs clarification before a confident answer is possible, or "escalate" if this \
