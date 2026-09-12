@@ -4,6 +4,7 @@ Reads GEMINI_API_KEY from a .env file via python-dotenv.
 """
 
 import json
+import time
 
 from dotenv import load_dotenv
 from google import genai
@@ -14,7 +15,20 @@ load_dotenv()
 client = genai.Client()
 
 FLASH_LITE_MODEL = "gemini-3.5-flash-lite"
-FLASH_MODEL = "gemini-3.6-flash"
+
+MIN_CALL_INTERVAL_SECONDS = 4.2
+_last_call_time = None
+
+
+def _rate_limit() -> None:
+    """Block until at least MIN_CALL_INTERVAL_SECONDS have passed since the last API call."""
+    global _last_call_time
+    now = time.monotonic()
+    if _last_call_time is not None:
+        remaining = MIN_CALL_INTERVAL_SECONDS - (now - _last_call_time)
+        if remaining > 0:
+            time.sleep(remaining)
+    _last_call_time = time.monotonic()
 
 DOMAINS = ["HR", "FINANCE", "SUPPORT", "LEGAL", "OTHER"]
 
@@ -39,6 +53,12 @@ The conversation history may contain earlier turns in this exchange - use it to 
 If the context does not contain enough information to answer confidently, respond exactly with:
 "I don't have enough information to answer confidently"
 followed by a brief note on what information is missing, rather than guessing or inferring beyond the context.
+
+If the answer depends on a variable (such as role, contract type, or category) and the context enumerates \
+the specific values for each case, answer by listing all the relevant cases rather than asking the user to \
+specify or declining to answer. Only treat a question as needing clarification when the missing information \
+is about the user's own specific situation (e.g. which product they own, their exact travel destination, \
+their purchase date) and is not itself enumerable from the context.
 
 When you do answer, be concise. Write in clean prose without bracketed citations, chunk numbers, \
 or other inline reference markers - do not mention "Chunk" or similar labels in your answer."""
@@ -76,6 +96,7 @@ information>,
 
 def classify_domain(query: str) -> str:
     """Classify a query into HR, FINANCE, SUPPORT, LEGAL, or OTHER using Gemini Flash-Lite."""
+    _rate_limit()
     response = client.models.generate_content(
         model=FLASH_LITE_MODEL,
         contents=query,
@@ -89,16 +110,18 @@ def classify_domain(query: str) -> str:
 
 
 def draft_answer(query: str, chunks: list[str], history: list[dict]) -> str:
-    """Draft an answer to `query` grounded only in `chunks`, using Gemini Flash."""
+    """Draft an answer to `query` grounded only in `chunks`, using Gemini Flash-Lite."""
     context = "\n\n".join(f"[Chunk {i}]\n{chunk}" for i, chunk in enumerate(chunks, start=1))
     user_turn = f"Context:\n{context}\n\nQuestion: {query}"
 
+    _rate_limit()
     response = client.models.generate_content(
-        model=FLASH_MODEL,
+        model=FLASH_LITE_MODEL,
         contents=[*history, {"role": "user", "parts": [{"text": user_turn}]}],
         config=types.GenerateContentConfig(
             system_instruction=DRAFT_ANSWER_SYSTEM_PROMPT,
             max_output_tokens=16000,
+            temperature=0.2,
         ),
     )
     return response.text
@@ -109,13 +132,23 @@ def verify_answer(draft: str, chunks: list[str]) -> dict:
     context = "\n\n".join(f"[Chunk {i}]\n{chunk}" for i, chunk in enumerate(chunks, start=1))
     user_turn = f"Source chunks:\n{context}\n\nDraft answer:\n{draft}"
 
+    _rate_limit()
     response = client.models.generate_content(
         model=FLASH_LITE_MODEL,
         contents=user_turn,
         config=types.GenerateContentConfig(
             system_instruction=VERIFY_ANSWER_SYSTEM_PROMPT,
             max_output_tokens=1024,
+            response_mime_type="application/json",
         ),
     )
     text = response.text.strip()
-    return json.loads(text)
+    try:
+        return json.loads(text)
+    except json.JSONDecodeError:
+        return {
+            "grounded": False,
+            "confidence": "low",
+            "action": "escalate",
+            "reasoning": "Verification response could not be parsed; escalating as a safe default.",
+        }
