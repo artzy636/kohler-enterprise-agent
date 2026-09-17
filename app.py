@@ -1,9 +1,11 @@
 """Streamlit chat UI for the KOHLER enterprise knowledge assistant."""
 
 import json
+import traceback
 from datetime import datetime
 
 import streamlit as st
+from google.genai.errors import ClientError
 
 from src.formatters import DOMAIN_LABELS, to_email_draft, to_excel, to_json, to_xml
 from src.pipeline import Answer, answer_query
@@ -111,8 +113,26 @@ if prompt := st.chat_input("Ask a question..."):
         with st.spinner("Thinking..."):
             try:
                 answer = answer_query(prompt, history)
-            except Exception as exc:
-                st.error(f"Something went wrong while generating a response: {exc}")
+            except ClientError as exc:
+                if getattr(exc, "code", None) == 429:
+                    st.error(
+                        "The system is receiving a lot of requests right now — "
+                        "please wait about 30 seconds and try again."
+                    )
+                else:
+                    print(f"ClientError from answer_query: {exc}")
+                    traceback.print_exc()
+                    st.error(
+                        "Something went wrong processing that question — "
+                        "please try rephrasing it or try again shortly."
+                    )
+                answer = None
+            except Exception:
+                traceback.print_exc()
+                st.error(
+                    "Something went wrong processing that question — "
+                    "please try rephrasing it or try again shortly."
+                )
                 answer = None
 
         if answer is not None:
