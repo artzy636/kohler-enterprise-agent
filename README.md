@@ -106,3 +106,8 @@ run_eval.py Runs them and reports pass/fail
 app.py The Streamlit app itself
 .streamlit/config.toml Custom theme
 ```
+## Submission materials
+
+- Prompts documentation: [docs/KOHLER_Track3_Prompts_Documentation.pdf](docs/KOHLER_Track3_Prompts_Documentation.pdf)
+- Presentation deck: [docs/KOHLER_Track3_Deck.pdf](docs/KOHLER_Track3_Deck.pdf)
+- Demo video: [docs/KOHLER_Track3_Demo_Video(fl).mp4](docs/KOHLER_Track3_Demo_Video(fl).mp4)
