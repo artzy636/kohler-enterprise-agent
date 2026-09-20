@@ -53,6 +53,28 @@ def _generate_clarifying_question(query: str, chunk_texts: list[str]) -> str:
     return response.text.strip()
 
 
+def _recent_user_texts(history: list, max_turns: int = 2) -> list[str]:
+    """Text of the last `max_turns` user turns from Gemini-format history."""
+    texts = []
+    for turn in reversed(history):
+        if turn.get("role") != "user":
+            continue
+        text = " ".join(p.get("text", "") for p in turn.get("parts", []) if p.get("text"))
+        if text:
+            texts.append(text)
+        if len(texts) >= max_turns:
+            break
+    texts.reverse()
+    return texts
+
+
+def _build_retrieval_query(query: str, history: list) -> str:
+    """Combine the current query with recent user turns so a short follow-up
+    (e.g. "numi 2.0" after "how much warranty on my product?") still retrieves
+    the right documents, even though it has no keywords of its own."""
+    return " ".join(_recent_user_texts(history, max_turns=2) + [query])
+
+
 def answer_query(query: str, history: list) -> Answer:
     """Run the full pipeline for `query` and return an Answer.
 
@@ -65,7 +87,8 @@ def answer_query(query: str, history: list) -> Answer:
             text=NO_DOMAIN_MATCH_MESSAGE, domain=domain, confidence="low", action="escalate", citations=[]
         )
 
-    chunks = retrieve(query, domain.lower())
+    retrieval_query = _build_retrieval_query(query, history)
+    chunks = retrieve(retrieval_query, domain.lower())
     chunk_texts = [chunk["text"] for chunk in chunks]
 
     draft = draft_answer(query, chunk_texts, history)
