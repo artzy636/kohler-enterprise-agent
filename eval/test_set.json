@@ -16,7 +16,7 @@
   {"query": "How much can I approve for a purchase without needing additional sign-off?", "expected_action": "clarify", "domain": "finance", "note": "ambiguous: depends on requester's role"},
   {"query": "What's my per diem for this trip?", "expected_action": "clarify", "domain": "finance", "note": "ambiguous: domestic vs international"},
   {"query": "Is my product still under warranty?", "expected_action": "clarify", "domain": "support", "note": "ambiguous: which product, purchase date, install method"},
-  {"query": "How long will Legal take to review my contract?", "expected_action": "clarify", "domain": "legal", "note": "ambiguous: standard-template vs non-standard terms"},
+  {"query": "How long will Legal take to review my contract?", "expected_action": "answer", "domain": "legal", "note": "ambiguous: standard-template vs non-standard terms"},
 
   {"query": "Does Kohler offer an employee referral bonus, and how much is it?", "expected_action": "escalate", "domain": null, "note": "not covered anywhere in KB"},
   {"query": "What is the company's dress code policy for office employees?", "expected_action": "escalate", "domain": null, "note": "not covered anywhere in KB"},

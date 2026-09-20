@@ -1,9 +1,11 @@
 """Gemini-powered agent functions: domain classification, answer drafting, and verification.
 
-Reads GEMINI_API_KEY from a .env file via python-dotenv.
+Reads GEMINI_API_KEY from a .env file via python-dotenv (local development), falling back
+to Streamlit secrets when deployed on Streamlit Community Cloud.
 """
 
 import json
+import os
 import time
 
 from dotenv import load_dotenv
@@ -12,11 +14,25 @@ from google.genai import types
 
 load_dotenv()
 
-client = genai.Client()
+
+def _get_api_key() -> str | None:
+    """Resolve the Gemini API key from the environment, falling back to st.secrets."""
+    api_key = os.getenv("GEMINI_API_KEY")
+    if api_key:
+        return api_key
+    try:
+        import streamlit as st
+
+        return st.secrets["GEMINI_API_KEY"]
+    except Exception:
+        return None
+
+
+client = genai.Client(api_key=_get_api_key())
 
 FLASH_LITE_MODEL = "gemini-3.5-flash-lite"
 
-MIN_CALL_INTERVAL_SECONDS = 4.2
+MIN_CALL_INTERVAL_SECONDS = 5.0
 _last_call_time = None
 
 
@@ -60,6 +76,11 @@ specify or declining to answer. Only treat a question as needing clarification w
 is about the user's own specific situation (e.g. which product they own, their exact travel destination, \
 their purchase date) and is not itself enumerable from the context.
 
+When clarification is needed under the rule above, respond with a direct, specific question addressed to \
+the user (for example: "Which product do you own — the Numi 2.0 or the Verdera Voice?") rather than the \
+"I don't have enough information to answer confidently" phrasing. Reserve that exact phrasing only for \
+cases where no follow-up question could make the context sufficient to answer.
+
 When you do answer, be concise. Write in clean prose without bracketed citations, chunk numbers, \
 or other inline reference markers - do not mention "Chunk" or similar labels in your answer."""
 
@@ -69,11 +90,15 @@ You will be given a draft answer and the source context chunks it was supposed t
 Evaluate whether the draft is fully grounded in the source chunks (no unsupported claims, no facts absent \
 from the context) and decide how confident and actionable the draft is.
 
-Important rule: if the draft itself states that it doesn't have enough information, cannot answer \
-confidently, or otherwise contains no substantive answer to the question, then action MUST be "escalate" - \
-regardless of how well-reasoned or appropriate that refusal is. The "answer" action is only for drafts that \
-provide an actual grounded answer to the question, never for drafts that correctly decline to answer. A \
-well-written refusal is still not a confident answer.
+Important rule: if the draft asks the user a direct, specific follow-up question about their own situation \
+(e.g. which product they own, their travel destination, their purchase date) in order to proceed, then \
+action MUST be "clarify" - this is a genuine request for missing user-specific detail, not a refusal. If \
+instead the draft states that it doesn't have enough information, cannot answer confidently, or otherwise \
+contains no substantive answer AND does not ask such a specific follow-up question, then action MUST be \
+"escalate" - regardless of how well-reasoned or appropriate that refusal is. The "answer" action is only \
+for drafts that provide an actual grounded answer to the question, never for drafts that ask for \
+clarification or that correctly decline to answer. A well-written refusal or clarifying question is still \
+not a confident answer.
 
 "grounded" must be true only when action is "answer" and the draft provides a real, evidence-backed \
 response supported by the source chunks. In every other case - "escalate" (whether because the draft \
