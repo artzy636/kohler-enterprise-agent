@@ -6,7 +6,7 @@ The main thing I wanted to get right here: instead of an assistant that always s
 
 Try it live
 
-kohler-enterprise-agent.streamlit.app
+[kohler-enterprise-agent.streamlit.app](https://kohler-enterprise-agent.streamlit.app)
 
 Just open the link, no setup needed. A couple of things you might notice:
 
@@ -83,8 +83,6 @@ Run it with:
 ```
 python eval/run_eval.py
 ```
-
-Current result: 15 out of 20 (75%). Every single miss comes down to the same thing: the system disagreeing with my own labeling on whether an ambiguous question should get answered directly, get a clarifying question, or get escalated — all three are defensible responses to those particular questions. What I actually care about more: across every run I did while building this, it never once made something up or stated a fact that wasn't true. When it doesn't know something, it says so, consistently.
 
 Things that aren't perfect, and why
 It's slow (~10-15s per answer). That's the free-tier rate limiting mentioned above, not a design flaw — on a paid plan this delay just goes away.
