@@ -111,3 +111,43 @@ app.py The Streamlit app itself
 - Prompts documentation: [docs/KOHLER_Track3_Prompts_Documentation.pdf](docs/KOHLER_Track3_Prompts_Documentation.pdf)
 - Presentation deck: [docs/KOHLER_Track3_Deck.pdf](docs/KOHLER_Track3_Deck.pdf)
 - Demo video: [docs/KOHLER_Track3_Demo_Video(fl).mp4](docs/KOHLER_Track3_Demo_Video(fl).mp4)
+
+## What's in scope, and what to try
+
+The knowledge base covers four domains — **HR, Finance, Product Support, and Legal** — across 48 hand-authored documents. Anything outside that scope is designed to escalate to a human rather than guess.
+
+**Answered directly** (grounded in the knowledge base):
+- "How many days of annual leave do full-time employees accrue per year?"
+- "How long is the warranty on the Numi 2.0 smart toilet?"
+- "I'm a manager and want to buy a $12,000 piece of equipment. What approval process applies?"
+
+**Asks a clarifying question** (needs one detail about you specifically):
+- "What's my per diem for this trip?"
+- "Is my product still under warranty?"
+- "How much can I approve for a purchase without needing additional sign-off?"
+
+**Escalates to a human** (genuinely out of scope — the system won't guess):
+- "Does Kohler offer an employee referral bonus, and how much is it?"
+- "What's the vesting schedule for employee stock options?"
+
+**Multi-turn memory** — ask a question, then a pronoun-based follow-up (e.g. "How long is the Numi 2.0's warranty?" → "What about the Leap toilet instead?") to see it resolve the follow-up using conversation history.
+
+The full 20-case test set with all expected outcomes is in `eval/test_set.json`, and the detailed reasoning behind each routing decision is in the prompts documentation.
+
+## Knowledge base contents
+
+The assistant's knowledge base is 48 short, hand-authored markdown documents across four domains — nothing outside these topics is answerable; anything else correctly escalates.
+
+**HR** (12 documents): leave policy, parental leave, benefits overview, onboarding, resignation process, performance review cycle, promotion & appraisal criteria, code of conduct, anti-harassment policy, grievance process, remote work policy, training & development.
+
+**Finance** (12 documents): travel per diem, expense reimbursement, relocation reimbursement, corporate card policy, petty cash, vendor payment terms, invoice timeline, budget approval workflow, asset/equipment purchase approval, procurement approval by role, tax documentation, year-end closing.
+
+**Legal** (12 documents): contract approval workflow, data breach reporting, data privacy policy, data retention, employee data handling, IP policy, anti-bribery policy, conflict of interest, regulatory compliance overview, terms of service summary, third-party audits, vendor compliance.
+
+**Support** (12 documents), by product line:
+- **Numi 2.0** (smart toilet) — overview, Alexa/voice control troubleshooting
+- **Leap collection** (entry-level toilets) — collection comparison, bidet wand troubleshooting
+- **Anthem** (shower system) — EvoCycle setup, cycle-mode water savings
+- **Verdera Voice** (smart mirror) — setup, lighting issues
+- **Konnect app** — device pairing issues
+- Cross-product: returns & exchanges, smart product warranty policy, installation support contact
