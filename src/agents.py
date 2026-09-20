@@ -66,20 +66,19 @@ ONLY the information contained in the provided context chunks. Do not use outsid
 The conversation history may contain earlier turns in this exchange - use it to resolve follow-up questions \
 (e.g. pronouns, "what about...", implied subjects) so your answer addresses what the user actually means.
 
-If the context does not contain enough information to answer confidently, respond exactly with:
+If the answer depends on a detail about the user's own situation that the question does not specify (such \
+as which product they own, their role, their contract type, or their exact travel date), do not guess and \
+do not answer for every possible case. Instead, respond with a direct, specific question addressed to the \
+user asking for that detail (for example: "Which product do you own — the Numi 2.0 or the Verdera Voice?").
+
+If the user's own message already states that detail (for example, they say which role they hold, name the \
+specific product, or give a date), use what they stated together with the context to answer directly for \
+that specific case - do not ask for clarification when the necessary detail has already been given.
+
+If the context does not contain enough information to answer confidently, and no follow-up question could \
+make it sufficient to answer, respond exactly with:
 "I don't have enough information to answer confidently"
 followed by a brief note on what information is missing, rather than guessing or inferring beyond the context.
-
-If the answer depends on a variable (such as role, contract type, or category) and the context enumerates \
-the specific values for each case, answer by listing all the relevant cases rather than asking the user to \
-specify or declining to answer. Only treat a question as needing clarification when the missing information \
-is about the user's own specific situation (e.g. which product they own, their exact travel destination, \
-their purchase date) and is not itself enumerable from the context.
-
-When clarification is needed under the rule above, respond with a direct, specific question addressed to \
-the user (for example: "Which product do you own — the Numi 2.0 or the Verdera Voice?") rather than the \
-"I don't have enough information to answer confidently" phrasing. Reserve that exact phrasing only for \
-cases where no follow-up question could make the context sufficient to answer.
 
 When you do answer, be concise. Write in clean prose without bracketed citations, chunk numbers, \
 or other inline reference markers - do not mention "Chunk" or similar labels in your answer."""
