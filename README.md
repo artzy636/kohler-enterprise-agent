@@ -1,4 +1,4 @@
-KOHLER Unified Enterprise AI Agent
+ Unified Enterprise AI Agent
 
 An enterprise AI agent for HR, Finance, Customer Support, and Legal/Compliance questions. Built for the KOHLER-MITWPU AI Research Centre case study (Track 3).
 
